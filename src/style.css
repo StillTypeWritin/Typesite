@@ -1,0 +1,12 @@
+@import "tailwindcss";
+
+/* Pyramid container sizing via CSS-only container queries */
+.cq-container {
+  container-type: size;
+}
+
+/* Square frame grows to the min of container width and height */
+.square-grow {
+  width: min(100cqi, calc(100cqb * 1.25));
+  aspect-ratio: 1 / 1;
+}

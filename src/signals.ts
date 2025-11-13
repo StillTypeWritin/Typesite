@@ -3,7 +3,7 @@ import { computed, signal } from '@preact/signals'
 import { loyalists } from './data/loyalists'
 import { displayNames } from './data/displayNames'
 
-export const generations = signal(4)
+export const generations = signal(loyalists.length)
 export const generationsInPyramid = computed(() => generations.value + 1)
 export const hoveredProfile = signal<{
 	generation: number
